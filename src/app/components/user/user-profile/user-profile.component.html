@@ -1,0 +1,6 @@
+<div class="container">
+  <div *ngIf="currentUser$ | async as currentUser">
+    <div class="user-info">Имя: {{ currentUser.name }}</div>
+  </div>
+  <button (click)="navigateToMain()">Вернуться назад</button>
+</div>

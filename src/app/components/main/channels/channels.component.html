@@ -1,0 +1,13 @@
+<div class="channels">
+  <h4>CHANNELS</h4>
+  <ul class="ul-without-dots">
+    <li
+      *ngFor="let channel of channels$ | async; trackBy: trackByChannelId"
+      class="channel"
+      (click)="changeChannel(channel)"
+    >
+      {{ channel.name }}
+    </li>
+  </ul>
+  <button class="add-button" (click)="addChannel()">+ Add Channel</button>
+</div>

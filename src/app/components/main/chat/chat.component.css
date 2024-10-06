@@ -1,0 +1,39 @@
+.messages {
+  border: 2px solid #cfcfcf;
+  height: 400px;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: scroll;
+
+  .chat-info {
+    margin-bottom: 10px;
+
+    .chat-name {
+      font-weight: bold;
+    }
+  }
+}
+
+.send-message {
+  margin-top: 10px;
+
+  .chat-message-input {
+    height: 25px;
+    width: 70%;
+  }
+
+  .add-button {
+    padding: 7px;
+    border-radius: 5px;
+    width: 25%;
+    height: 30px;
+    background-color: #ffdb4c;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #ff9500;
+    }
+  }
+}

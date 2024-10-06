@@ -1,0 +1,43 @@
+h4 {
+  margin: 0;
+}
+
+.users {
+  padding: 10px 0;
+  min-height: 190px;
+
+  .ul-without-dots {
+    list-style-type: none;
+    padding: 0;
+
+    .ul-online {
+      display: flex;
+      margin-bottom: 10px;
+
+      .online {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      .online-name {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .add-button {
+    padding: 7px;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: #ffdb4c;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff9500;
+    }
+  }
+}

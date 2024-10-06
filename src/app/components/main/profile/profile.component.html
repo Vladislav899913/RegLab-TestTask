@@ -1,0 +1,12 @@
+<div class="profile">
+  <div *ngIf="currentUser$ | async as currentUser" class="user-info">
+    <div class="user-name">{{ currentUser.name | capitalize }}</div>
+    <div class="user-info-sub">Это вы</div>
+  </div>
+  <div class="buttons">
+    <button class="user-settings" (click)="navigateToSettings()">
+      SETTINGS
+    </button>
+    <button class="user-logout" (click)="logOut()">LOG OUT</button>
+  </div>
+</div>

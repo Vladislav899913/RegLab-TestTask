@@ -1,0 +1,16 @@
+.chat-container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+
+  .left-side {
+    width: 40%;
+  }
+
+  .right-side {
+    border-left: 2px solid #cfcfcf;
+    margin-left: 10px;
+    width: 60%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="users">
+  <h4>USERS</h4>
+  <ul class="ul-without-dots">
+    <li
+      *ngFor="let user of users$ | async; trackBy: trackByUserId"
+      class="ul-online"
+    >
+      <span
+        class="online"
+        [ngStyle]="{
+          'background-color': user.isOnline ? '#34c759' : '#ff3b30'
+        }"
+      ></span>
+      <div class="online-name">{{ user.name }}</div>
+    </li>
+  </ul>
+  <button class="add-button" (click)="addUser()">+ Add User</button>
+</div>

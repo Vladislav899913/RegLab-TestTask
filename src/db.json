@@ -1,0 +1,86 @@
+{
+  "channels": [
+    {
+      "id": 1,
+      "name": "Vladislav",
+      "isOnline": false,
+      "channels": [
+        {
+          "id": 1,
+          "name": "#general"
+        },
+        {
+          "id": 2,
+          "name": "#summer"
+        },
+        {
+          "id": 3,
+          "name": "#party"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "isOnline": true,
+      "channels": [
+        {
+          "id": 1,
+          "name": "#general"
+        },
+        {
+          "id": 2,
+          "name": "#summer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "isOnline": true,
+      "channels": [
+        {
+          "id": 1,
+          "name": "#general"
+        },
+        {
+          "id": 2,
+          "name": "#summer"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Andrew",
+      "isOnline": false,
+      "channels": [
+        {
+          "id": 1,
+          "name": "#general"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Vladislav",
+      "isOnline": true
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "isOnline": true
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "isOnline": true
+    },
+    {
+      "id": 4,
+      "name": "Andrew",
+      "isOnline": false
+    }
+  ]
+}

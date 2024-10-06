@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Авторизация</h1>
+  <form (ngSubmit)="login()">
+    <div class="inputs">
+      <div class="login">
+        <label class="label" for="username">Логин:</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          required
+          [(ngModel)]="username"
+        />
+      </div>
+      <div class="password">
+        <label class="label" for="password">Пароль:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          required
+          [(ngModel)]="password"
+        />
+      </div>
+    </div>
+
+    <div class="error">{{ errorMessage$ | async }}</div>
+    <button class="button" type="submit">Войти</button>
+  </form>
+</div>

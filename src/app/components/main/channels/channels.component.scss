@@ -1,0 +1,40 @@
+h4 {
+  margin: 0;
+}
+
+.channels {
+  min-height: 190px;
+  padding: 10px 0;
+  border-bottom: 2px solid #cfcfcf;
+
+  .ul-without-dots {
+    list-style-type: none;
+    padding: 0;
+
+    .channel {
+      background-color: #efefef;
+      margin-bottom: 2px;
+      cursor: pointer;
+      padding: 7px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #d6d6d6;
+      }
+    }
+  }
+
+  .add-button {
+    padding: 7px;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: #ffdb4c;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff9500;
+    }
+  }
+}

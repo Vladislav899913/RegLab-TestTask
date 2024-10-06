@@ -1,0 +1,33 @@
+<div *ngIf="activeChannel$ | async as activeChannel">
+  <div class="chat-name">
+    {{ activeChannel.name }}
+  </div>
+  <div class="messages">
+    <div
+      class="chat-info"
+      *ngFor="
+        let message of activeChannelMessages$ | async;
+        trackBy: trackByMessageId
+      "
+    >
+      <div class="chat-name">{{ message.fromUser.name }}</div>
+      <div class="chat-messages">{{ message.content }}</div>
+    </div>
+  </div>
+  <div class="send-message">
+    <input
+      class="chat-message-input"
+      type="text"
+      [disabled]="!activeChannel.id"
+      [(ngModel)]="newMessage"
+      (keyup.enter)="sendMessage()"
+    />
+    <button
+      class="add-button"
+      [disabled]="!activeChannel.id"
+      (click)="sendMessage()"
+    >
+      Отправить
+    </button>
+  </div>
+</div>
